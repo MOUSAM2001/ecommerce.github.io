@@ -39,12 +39,45 @@
 					<div class="container">
 						<header class="major">
 							<h2>Beverages Deals </h2>
+							<p>Get the best deals</p>
+
+				<html>
+  <head>
+    <title>My Shopping Cart</title>
+  </head>
+  <body>
+    <ul id="cart">
+      <!-- the cart is currently empty -->
+    </ul>
+    <h2>Add in the carts</h2>
+    <ul id="products">
+      <li>Product A <button onclick="addToCart('Product A')">Add to Cart</button></li>
+      <li>Product B <button onclick="addToCart('Product B')">Add to Cart</button></li>
+      <li>Product C <button onclick="addToCart('Product C')">Add to Cart</button></li>
+      <li>Product D <button onclick="addToCart('Product D')">Add to Cart</button></li>
+    </ul>
+    <script>
+      // define the addToCart function
+      function addToCart(product) {
+        // get the cart element
+        var cart = document.getElementById("cart");
+        // create a new list item for the product
+        var li = document.createElement("li");
+        li.textContent = product;
+        // add the new list item to the cart
+        cart.appendChild(li);
+        // log a message to the console
+        console.log(product + " has been added to the cart.");
+      }
+    </script>
+  </body>
+</html>
 							
 						</header>
 
 						<!-- Content -->
 							<section id="content">
-								<a href="#" class="image fit"><img src="C:\Users\MOUSAM KUMAR\Pictures\beverages.jpeg" alt="" /></a>
+								<a href="#" class="image fit"><img src="C:\Users\MOUSAM KUMAR\Desktop\my first website code\images\beverages.jpeg" alt="" /></a>
 								<h3>About Beverages </h3>
 								<p>A drink or beverage is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture. Common types of drinks include plain drinking water, milk, juice, smoothies and soft drinks. Traditionally warm beverages include coffee, tea, and hot chocolate. Caffeinated drinks that contain the stimulant caffeine have a long history.
 

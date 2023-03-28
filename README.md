@@ -1,1 +1,1 @@
-# ecommerce.github.io
+# ShopSmart.github.io
